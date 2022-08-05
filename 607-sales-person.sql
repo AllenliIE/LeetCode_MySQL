@@ -10,6 +10,7 @@
 -- com_id   = (1, 1)
 -- </pre>
 
+-- <strong>Code1:</strong>
 SELECT s.name AS name
     FROM SalesPerson AS s
 WHERE s.sales_id NOT IN 
