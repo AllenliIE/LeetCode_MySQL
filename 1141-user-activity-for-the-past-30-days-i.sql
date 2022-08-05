@@ -6,6 +6,7 @@
 -- 3. 來自 Activity 的 table，且以 activity_date 的日期為群組。
 -- 4. 有符合在 2019-07-27 ~ 2019-06-28 日期之間的 activity_date。
 
+-- <strong>Code1:</strong>
 SELECT 
 	activity_date AS day,
 	COUNT(DISTINCT user_id) AS active_users
