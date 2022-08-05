@@ -8,6 +8,7 @@
 -- 3. 設定「不再Orders.customerId的訂單」
 -- (ex.LEFT JOIN 會返回左側資料表中所有資料列，如果沒有匹配的資料值，則顯示為 NULL。)
 
+-- <strong>Code1:</strong>
 SELECT name AS Customers
     FROM Customers
     LEFT JOIN Orders 
