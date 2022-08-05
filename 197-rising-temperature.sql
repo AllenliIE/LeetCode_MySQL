@@ -5,6 +5,7 @@
 -- 2. 假設有兩個相同的 Weather 表。
 -- 3. 當第一張表的溫度大於第二張表時，且日期相差一天。
 
+-- <strong>Code1:</strong>
 SELECT w1.id 
 	FROM Weather AS w1, Weather AS w2
 WHERE w1.temperature > w2.temperature 
