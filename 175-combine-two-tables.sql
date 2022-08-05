@@ -5,6 +5,7 @@
 -- 2. 選擇標題 Address table 的 city, state。
 -- 3. 將符合的資料放在左側，而右側資料表沒有符合的值為空值。
 
+-- <strong>Code1:</strong>
 SELECT 
     p.firstName, 
     p.lastName,
