@@ -12,3 +12,8 @@ SELECT
         ORDER BY Salary DESC
         LIMIT 1 OFFSET 1
 	) AS SecondhighestSalary;
+
+-- <strong>Code2:</strong>
+SELECT MAX(salary) AS SecondHighestSalary
+    FROM Employee
+WHERE salary < (SELECT MAX(salary) FROM Employee);
