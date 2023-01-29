@@ -21,3 +21,11 @@ WHERE t1.id + 1 = t2.id
     AND t2.id + 1 = t3.id 
     AND t1.num = t2.num 
     AND t2.num = t3.num;
+
+-- <strong>Code.2:</strong>
+SELECT DISTINCT t1.num AS ConsecutiveNums
+    FROM Logs AS t1
+LEFT JOIN Logs AS t2 ON t1.id + 1 = t2.id
+LEFT JOIN Logs AS t3 ON t2.id + 1 = t3.id
+WHERE t1.num = t2.num
+    AND t2.num = t3.num;
