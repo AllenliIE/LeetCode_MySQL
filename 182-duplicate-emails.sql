@@ -11,3 +11,9 @@ SELECT email AS Email
   FROM Person
 GROUP BY email
 HAVING COUNT(Email) > 1;
+
+-- <strong>Code.2:</strong>
+SELECT email AS Email
+  FROM Person
+GROUP BY email
+HAVING COUNT(*) > 1;
