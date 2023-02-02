@@ -14,3 +14,9 @@ SELECT name AS Customers
     LEFT JOIN Orders 
         ON Orders.customerId = Customers.id
 WHERE Orders.customerId IS NULL;
+
+-- <strong>Code2:</strong>
+SELECT name AS Customers
+    FROM Customers
+WHERE id NOT IN
+    (SELECT customerId FROM Orders);
