@@ -7,8 +7,8 @@
 
 <strong>Code.1:</strong>
 SELECT t2.name AS Department,
-	t1.name As Employee,
-    t1.salary As Salary
+	t1.name AS Employee,
+    t1.salary AS Salary
 FROM Employee AS t1
 LEFT JOIN Department AS t2
 	ON t1.departmentId = t2.id
